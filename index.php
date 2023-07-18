@@ -39,7 +39,6 @@ $hotels = [
   ],
 
 ];
-
 ?>
 
 
@@ -56,6 +55,15 @@ $hotels = [
 </head>
 
 <body>
+
+  <?php foreach ($hotels as $hotel) : ?>
+    <ul><?= $hotel['name'] ?>
+      <li><?= $hotel['description'] ?></li>
+      <li><?= $hotel['parking'] ?></li>
+      <li><?= $hotel['vote'] ?></li>
+      <li><?= $hotel['distance_to_center'] ?></li>
+    </ul>
+  <?php endforeach ?>
 
 </body>
 
